@@ -587,11 +587,6 @@ class Environment(object):
             venemylife.append(enemylife)
             vtime.append(time)
 
-        vfitness = self.cons_multi(numpy.array(vfitness))
-        vplayerlife = self.cons_multi(numpy.array(vplayerlife))
-        venemylife = self.cons_multi(numpy.array(venemylife))
-        vtime = self.cons_multi(numpy.array(vtime))
-
         return    vfitness, vplayerlife, venemylife, vtime
 
 
